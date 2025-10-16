@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+ 
+
+    /* Background */
+
+  --color-primary-400: #241914;           
+  --color-primary-foreground: #FAFAFA;            
+
+  --color-card: #2A1C16;                  
+  --color-card-foreground: #FAFAFA;      
+
+  --color-popover: #241914;               
+  --color-popover-foreground: #FAFAFA;    
+
+  --color-primary-500: #FF7A00;               
+  --color-primary-foreground: #FFFFFF;   
+
+  --color-secondary: #3A251C;             
+  --color-secondary-foreground: #FAFAFA;  
+
+  --color-muted: #433026;                 
+  --color-muted-foreground: #A6A6A6;      
+
+  --color-accent: #E63A84;                
+  --color-accent-foreground: #FFFFFF;     
+
+  --color-gold: #FFD53B;                  
+  --color-gold-foreground: #1A1A1A;       
+
+  --color-destructive: #EF4444;           
+  --color-destructive-foreground: #FAFAFA;
+
+  --color-border: #4A352C;               
+  --color-input: #4A352C;                 
+  --color-ring: #FF7A00;                  
+  --border-radius: 0.75rem;
+
+  /* Font */
+
+  --font-Orbi: "Orbitron", sans-serif;
+
+
+
+  /* HEX */
+
+  --color-background-color: #241914; 
+    --color-background-color-200: #FAFAFA;
+
+  /* Gradientes */
+  --color-gradient-hero: linear-gradient(135deg, #FF7A00 0%, #A14C1E 50%, #241914 100%);
+  --color-gradient-glass: linear-gradient(135deg, rgba(255, 122, 0, 0.1) 0%, rgba(42, 24, 16, 0.3) 100%);
+  --color-gradient-button: linear-gradient(90deg, #FF7A00 0%, #E26600 100%);
+  --color-background: linear-gradient(135deg, #FF7A00 0%, #A14C1E 50%, #241914 100%);
+
+  /* Sombras */
+  --color-shadow-elegant: 0 20px 60px -15px rgba(255, 122, 0, 0.4);
+  --color-shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+ 
+
+  
+
+@layer utilities {
+  .glass-header {
+    --background: rgba(36, 25, 20, 0.4); /* tom escuro translúcido */
+    --backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    --border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    --transition: background 0.4s ease, backdrop-filter 0.4s ease;
+  }
+
+  .glass-footer {
+    --background: rgba(36, 25, 20, 0.3); /* um pouco mais claro */
+    --backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    --border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+
+
