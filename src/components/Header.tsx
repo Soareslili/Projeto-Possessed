@@ -14,29 +14,38 @@ export const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <nav className="flex items-center gap-8">
-            <a href="#" className="text-sm font-sm text-accent-foreground hover:text-primary-500 transition-colors">
-              Men
-            </a>
-            <a href="#" className="text-sm font-sm text-accent-foreground hover:text-primary-500 transition-colors">
-              Women
-            </a>
-            <a href="#" className="text-sm font-sm text-accent-foreground hover:text-primary-500 transition-colors">
-              Customise
-            </a>
+            {["Men", "Women", "Customise"].map((label, i) => (
+              <a
+                key={label}
+                href="#"
+                className="text-sm font-sm text-accent-foreground hover:text-black transition-colors"
+                data-aos="zoom-in-down"
+                data-aos-delay={`${100 * (i + 1)}`}
+                data-aos-duration="1200"
+              >
+                {label}
+              </a>
+            ))}
           </nav>
 
-          <h1 className="absolute left-1/2 -translate-x-1/2 text-3xl font-Orbi font-bold text-accent-foreground">
+          <h1 className="absolute left-1/2 -translate-x-1/2 text-3xl font-Orbi font-bold text-accent-foreground"
+          data-aos="zoom-in"
+          data-aos-delay="600"
+          data-aos-duration="1600"
+          
+          >
+           
             POSSESSED
           </h1>
 
           <div className="flex items-center gap-4">
-            <a  className=" text-accent-foreground cursor-pointer rounded-2xl px-2 py-3 hover:bg-white/10">
+            <a className=" text-accent-foreground cursor-pointer rounded-2xl px-2 py-3 hover:bg-white/10">
               <Search className="h-5 w-5" />
             </a>
-            <a  className="text-accent-foreground cursor-pointer rounded-2xl px-2 py-3 hover:bg-white/10">
+            <a className="text-accent-foreground cursor-pointer rounded-2xl px-2 py-3 hover:bg-white/10">
               <ShoppingBag className="h-5 w-5" />
             </a>
-            <a  className="text-accent-foreground cursor-pointer rounded-2xl px-2 py-3 hover:bg-white/10">
+            <a className="text-accent-foreground cursor-pointer rounded-2xl px-2 py-3 hover:bg-white/10">
               <User className="h-8 w-8" />
             </a>
           </div>

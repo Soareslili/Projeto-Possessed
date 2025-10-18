@@ -26,7 +26,10 @@ const colors: ColorOption[] = [
 export const ColorCarousel = ({ onColorChange, activeColorId }: ColorCarouselProps) => {
 
   return (
-    <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-40 animate-fade-in">
+    <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-40 animate-fade-in"
+
+
+    >
       <div className=" px-6 py-4 rounded-full flex gap-4 items-center shadow-2xl"
         style={{
           background: "linear-gradient(180deg, rgba(255, 122, 0, 0.08) 0%, rgba(36, 25, 20, 0.45) 100%)",
@@ -35,6 +38,10 @@ export const ColorCarousel = ({ onColorChange, activeColorId }: ColorCarouselPro
           backdropFilter: "blur(16px)",
           WebkitBackdropFilter: "blur(16px)",
         }}
+
+        data-aos="fade-up"
+        data-aos-delay="800"
+        data-aos-duration="1800"
       >
         {colors.map((color) => (
           <button

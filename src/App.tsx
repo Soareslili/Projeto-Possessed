@@ -4,6 +4,7 @@ import { Header } from "./components/Header"
 import { ProductHero } from "./components/ProductHero"
 
 import { useState } from "react"
+import AOSInit from './components/AOSInit'
 
 
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
    <div className="min-h-screen overflow-hidden">
+    <AOSInit/>
       <Header />
       <ProductHero 
         currentImage={activeColor.image}
