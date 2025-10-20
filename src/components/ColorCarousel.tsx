@@ -17,10 +17,10 @@ export interface ColorOption {
 }
 
 const colors: ColorOption[] = [
-  { name: "Blood Orange", image: jacketOrange, id: "orange", price: "$1,250", productId: "353484" },
+  { name: "Matte Black", image: jacketOrange, id: "orange", price: "$1,250", productId: "353484" },
   { name: "Neon Pink", image: jacketPink3D, id: "pink", price: "$1,350", productId: "353485" },
   { name: "Metallic Gold", image: jacketGold3D, id: "gold", price: "$1,450", productId: "353486" },
-  { name: "Matte Black", image: jacketBlack3D, id: "black", price: "$1,299", productId: "353487" },
+  { name: "Blood Orange", image: jacketBlack3D, id: "black", price: "$1,299", productId: "353487" },
 ];
 
 export const ColorCarousel = ({ onColorChange, activeColorId }: ColorCarouselProps) => {
