@@ -65,39 +65,3 @@ Sombra elegante:
 ├── vite.config.ts
 └── README.md
 
-🖥️ Como Rodar o Projeto
-1️⃣ Clonar o repositório
-git clone https://github.com/seu-usuario/possessed.git
-cd possessed
-
-2️⃣ Instalar as dependências
-npm install
-
-3️⃣ Rodar o servidor local
-npm run dev
-
-4️⃣ Acessar o projeto
-
-Abra no navegador:
-👉 http://localhost:5173
-
-🧠 Plugins Importantes
-
-Se ocorrerem erros de dependência, verifique se os seguintes pacotes estão instalados:
-
-npm install @radix-ui/react-slot class-variance-authority
-
-📸 Captura de Tela
-
-👩‍💻 Desenvolvido por
-
-Lidiane Santos – Front-End Developer
-🎨 Foco em design moderno, UI/UX, animações e interfaces 3D
-🔗 Instagram @lid.dev
-
-🔗 LinkedIn
-
-🪄 Licença
-
-Este projeto foi criado para fins educacionais e de portfólio.
-© 2025 — Todos os direitos reservados.
